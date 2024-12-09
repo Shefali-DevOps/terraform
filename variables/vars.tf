@@ -37,6 +37,14 @@ output "x" {
   value = var.x
 }
 
+output "y" {
+  value = var.y
+}
+
+output "z" {
+  value = var.z
+}
+
 # Accessing Variable has a combination with a string then we need to refer the variable with ${}
 output "x1" {
   value = "Value of x - ${var.x}"
