@@ -5,7 +5,7 @@ resource "aws_route53_record" "test" {
   name    = "test.shefalidevops.shop"
   type    = "A"
   zone_id = "Z04468998YJS3W1N2Q1P"
-  ttl =  var.ttl
+  ttl =  var.ttl == "" ? 15 : var.ttl
   records = ["1.1.1.1"]
 }
 
