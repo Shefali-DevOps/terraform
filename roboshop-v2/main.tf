@@ -26,7 +26,7 @@ resource "aws_instance" "mongo"{
   }
 }
 
-resource "aws_route53_record" "frontend" {
+resource "aws_route53_record" "mongo" {
   name    = "mongo.dev.${var.domain_name}"
   type    = "A"
   zone_id = data.aws_route53_zone.zone.zone_id
@@ -44,7 +44,7 @@ resource "aws_instance" "catalogue"{
   }
 }
 
-resource "aws_route53_record" "frontend" {
+resource "aws_route53_record" "catalogue" {
   name    = "catalogue.dev.${var.domain_name}"
   type    = "A"
   zone_id = data.aws_route53_zone.zone.zone_id
