@@ -9,6 +9,4 @@ resource "aws_route53_record" "test" {
   records = ["1.1.1.1"]
 }
 
-variable "ttl" {
-  default = 15
-}
+variable "ttl" {}
