@@ -1,4 +1,4 @@
-resource "aws_route53_record" "test" {
+resource "aws_route53_record" "dns" {
   name    = "test.dev.shefalidevops.shop"
   type    = "A"
   zone_id = "Z04468998YJS3W1N2Q1P"
