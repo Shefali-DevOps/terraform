@@ -2,7 +2,7 @@ resource "null_resource" "test"{}
 
   terraform{
     backend "s3"{
-      bucket = "shefali-terraform-state"
+      bucket = "shef-devops-terraform"
       key = "test/terraform.tfstate"
       region = "us-east-1"
     }
