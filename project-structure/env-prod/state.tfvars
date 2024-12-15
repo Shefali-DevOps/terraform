@@ -1,3 +1,3 @@
 bucket = "shef-devops-terraform"
-key = "test/terraform.tfstate"
+key = "test/prod/terraform.tfstate"
 region = "us-east-1"
